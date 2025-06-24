@@ -9,5 +9,7 @@
     <h1 th:text="${title}"></h1>
     <p>Name: <span th:text="${user.name}"></span></p>
     <p>Last Name: <span th:text="${user.lastname}"></span></p>
+    <p th:if="${user.email}">E-Mail: <span th:text="${user.email}"></span></p>
+    <p th:if="${ user.email == null}">You don't have any email</p>
 </body>
 </html>
