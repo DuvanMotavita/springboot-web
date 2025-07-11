@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import com.duvan.curso.springboot.webapp.springboot_web.controllers.models.User;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 

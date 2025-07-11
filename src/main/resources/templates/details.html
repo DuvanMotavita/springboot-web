@@ -11,5 +11,13 @@
     <p>Last Name: <span th:text="${user.lastname}"></span></p>
     <p th:if="${user.email}">E-Mail: <span th:text="${user.email}"></span></p>
     <p th:if="${ user.email == null}">You don't have any email</p>
+
+    <a th:href="@{/list}">Go to List</a><br/>
+    <a th:href="@{/api/params/foo?message=Hi how are u festival?}">Go to Message</a><br/>
+    <a th:href="@{/api/params/foo(message='Hi how are u festival?')}">Go to Message2</a><br/>
+    <a th:href="@{/api/params/bar(text='Hi how are u festival?',code=3212)}">Bar params</a> <br/>
+    <a th:href="@{'/api/var/baz/'+${title}}">Bar params2</a><br/>
+    <a th:href="@{'/api/var/baz/'+ 'Hi how are u festival ?'}">Bar params 3</a>
+
 </body>
 </html>
